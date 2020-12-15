@@ -45,8 +45,6 @@ def generate(sender, recipient, subject, body, attachment_path=False):
 
 
 def send(message, server='localhost'):
-    """
-    """
     mail_server = smtplib.SMTP(server)
     mail_server.send_message(message)
     mail_server.quit()
